@@ -1,6 +1,6 @@
 {
   "name": "xr-youtube-next-video",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A YouTube Next Video like React Component",
   "main": "lib",
   "repository": "https://github.com/xxxiin/xr-youtube-next-video.git",

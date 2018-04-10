@@ -23,6 +23,15 @@
   margin: 5px 0;
 }
 
+.YouTubeNextVideo-Title,
+.YouTubeNextVideo-Author {
+  text-align: center;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .YouTubeNextVideo-NextButton {
   width: 50px;
   margin: 8px 0 12px;
