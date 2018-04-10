@@ -1,0 +1,59 @@
+* xr-youtube-next-video
+
+A YouTube Next Video like React Component
+
+** Install
+
+#+BEGIN_SRC shell
+    $ yarn add xr-youtube-next-video
+#+END_SRC
+
+** Use
+
+*** Example
+
+#+BEGIN_SRC js
+  import React from 'react'
+  import {render} from 'react-dom'
+  import YouTubeNextVideo from '../../src'
+  import '../../src/index.css'
+  import locale from '../../src/locale/zh_CN'
+
+  class App extends React.Component {
+    handleNext = () => {
+      console.log('Next')
+    }
+
+    handleCancel = () => {
+      console.log('Cancel')
+    }
+
+    render() {
+      return (
+        <React.StrictMode>
+          <div>
+            <div className="wrapper">
+              <img alt="" src="https://images.unsplash.com/photo-1522198734915-76c764a8454d?auto=format&fit=crop&w=500&q=60" />
+              <YouTubeNextVideo
+                author="CaseyNeistat"
+                title="SHE'S MUCH BETTER'"
+                onNext={this.handleNext}
+                onCancel={this.handleCancel}
+                locale={locale}
+              />
+            </div>
+          </div>
+        </React.StrictMode>
+      )
+    }
+  }
+#+END_SRC
+
+*** Props
+
+- ~title: string~ - Video title
+- ~author: string~ - Video author name
+- ~locale: Object~ - i18n descriptor, default to ~lib/locale/en_US~
+- ~timeout: number~ - Next video timeout in ms, default to ~5000~
+- ~onNext:~ - Fire when timeout end or user click next button
+- ~onCancel~ - Fire when user click cancel button

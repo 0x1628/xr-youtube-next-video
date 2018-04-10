@@ -1,0 +1,42 @@
+.YouTubeNextVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .5);
+  font-size: 15px;
+}
+
+.YouTubeNextVideo-Next {
+  opacity: .7;
+}
+
+.YouTubeNextVideo-Title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.YouTubeNextVideo-NextButton {
+  width: 50px;
+  margin: 8px 0 12px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.YouTubeNextVideo-CancelButton {
+  font-size: 15px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
